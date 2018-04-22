@@ -1,6 +1,0 @@
-C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Ramallo 110186\Escuela\Escuela\bin\Debug\Escuela.exe.config
-C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Ramallo 110186\Escuela\Escuela\bin\Debug\Escuela.exe
-C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Ramallo 110186\Escuela\Escuela\bin\Debug\Escuela.pdb
-C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Ramallo 110186\Escuela\Escuela\obj\Debug\Escuela.csprojResolveAssemblyReference.cache
-C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Ramallo 110186\Escuela\Escuela\obj\Debug\Escuela.exe
-C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Ramallo 110186\Escuela\Escuela\obj\Debug\Escuela.pdb
