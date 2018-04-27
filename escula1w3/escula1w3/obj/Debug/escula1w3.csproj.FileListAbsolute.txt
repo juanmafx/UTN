@@ -1,0 +1,9 @@
+C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Manuel 110186\escula1w3\escula1w3\bin\Debug\escula1w3.exe.config
+C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Manuel 110186\escula1w3\escula1w3\bin\Debug\escula1w3.exe
+C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Manuel 110186\escula1w3\escula1w3\bin\Debug\escula1w3.pdb
+C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Manuel 110186\escula1w3\escula1w3\obj\Debug\escula1w3.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Manuel 110186\escula1w3\escula1w3\obj\Debug\escula1w3.Properties.Resources.resources
+C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Manuel 110186\escula1w3\escula1w3\obj\Debug\escula1w3.csproj.GenerateResource.Cache
+C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Manuel 110186\escula1w3\escula1w3\obj\Debug\escula1w3.exe
+C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Manuel 110186\escula1w3\escula1w3\obj\Debug\escula1w3.pdb
+C:\Users\alumno\Documents\Visual Studio 2015\Projects\Juan Manuel 110186\escula1w3\escula1w3\obj\Debug\escula1w3.frmAlumno.resources
