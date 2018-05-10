@@ -10,36 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class txtn2 : Form
+    public partial class Form1 : Form
     {
-        public txtn2()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -49,22 +24,59 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            alumno a;
-            a = new alumno();
-            a.pLeg = Convert.ToInt32(textleg.Text);
-            a.pNombre = Convert.ToString(textnombre.Text);
-            a.pN1 = Convert.ToInt32(textn1.Text);
-            a.pN2 = Convert.ToInt32(textn2.Text);
-            a.pN3 = Convert.ToInt32(textn3.Text);
-            laprom.Text = a.prom().ToString("0.000");
-
-
-
-
+            Empleado a;
+            a = new Empleado();
+            a.pLeg = Convert.ToInt32(leg.Text);
+            a.pNombre = Convert.ToString(nombre.Text);
+            a.pSexo = Convert.ToString(sexo.Text);
+            a.pHorasTrabajadas = float.Parse(horasTrabajadas.Text);
+            a.pPrecioHoras = float.Parse(precioHora.Text);
+            ts.Text = Convert.ToString(a.calSueldo());
 
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+    
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void leg_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sexo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void horasTrabajadas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void precioHora_TextChanged(object sender, EventArgs e)
         {
 
         }
