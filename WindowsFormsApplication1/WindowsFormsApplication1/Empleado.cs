@@ -46,7 +46,7 @@ namespace WindowsFormsApplication1
 
         public float calSueldo()
         {
-            var a = horasTrabajadas * precioHora *4;
+            var a = horasTrabajadas * precioHora ;
             return a;
         }
 
