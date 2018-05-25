@@ -59,12 +59,23 @@ namespace New_Botta_Form
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.habilitar();
-            this.limpiar();
+            if (MessageBox.Show("Esta seguro de Eliminar este alumno", "E L I M I N A N D O", MessageBoxButtons.YesNo, MessageBoxIcon.Question ,MessageBoxDefaultButton.Button3)== DialogResult.Yes)
+
+                limpiar();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            {
+                if (MessageBox.Show("Esta seguro de SALIR ? ????  ", " S A L I E N D  O ", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button3) == DialogResult.Yes)
+
+                    close();
+            }
 
         }
     }
