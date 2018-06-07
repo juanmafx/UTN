@@ -24,61 +24,8 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Empleado a;
-            a = new Empleado();
-            a.pLeg = Convert.ToInt32(leg.Text);
-            a.pNombre = Convert.ToString(nombre.Text);
-            a.pSexo = Convert.ToString(sexo.Text);
-            a.pHorasTrabajadas = float.Parse(horasTrabajadas.Text);
-            a.pPrecioHoras = float.Parse(precioHora.Text);
-            ts.Text = Convert.ToString(a.calSueldo());
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
+            Alumno a = new Alumno();
             
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-    
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void leg_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sexo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void horasTrabajadas_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void precioHora_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
