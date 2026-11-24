@@ -37,4 +37,10 @@ public class BodyMassIndexTest {
             Check.isTrue(BodyMassIndex.classify(low).ordinal() <= BodyMassIndex.classify(high).ordinal(), "monotonic");
         });
     }
+
+    @Test
+    void indexOutsideDoubleRangeIsRejected() {
+        Check.throwsType(IllegalArgumentException.class, () -> BodyMassIndex.of(70, 1e-200));
+        Check.throwsType(IllegalArgumentException.class, () -> BodyMassIndex.of(1e308, 1e-300));
+    }
 }

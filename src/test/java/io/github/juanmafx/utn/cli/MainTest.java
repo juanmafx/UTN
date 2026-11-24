@@ -87,4 +87,38 @@ public class MainTest {
     void divisionByZeroFailsCleanly() {
         Check.equal(2, run("calculate", "divide", "1", "0").status());
     }
+
+    @Test
+    void extraArgumentsAreRejected() {
+        Check.equal(2, run("duration", "10", "junk").status());
+        Check.equal(2, run("bingo", "42", "1", "2", "3", "4").status());
+    }
+
+    @Test
+    void bingoPicksMustBeInNumberRange() {
+        Check.equal(2, run("bingo", "42", "0", "50", "60").status());
+        Check.equal(2, run("bingo", "42", "1", "2", "101").status());
+    }
+
+    @Test
+    void unknownOptionsDoNotExposeClassNames() {
+        Result result = run("vehicle-tax", "boat", "2000", "2026");
+        Check.equal(2, result.status());
+        Check.equal("invalid input: unknown vehicle kind", result.err());
+    }
+
+    @Test
+    void nonFiniteValuesAreRejected() {
+        Check.equal(2, run("calculate", "multiply", "1e308", "10").status());
+        Check.equal(2, run("calculate", "add", "NaN", "1").status());
+        Check.equal(2, run("bmi", "70", "1e-200").status());
+        Check.equal(2, run("triangle", "1e308", "1e308", "1e308").status());
+    }
+
+    @Test
+    void exponentOverflowIsReportedAsOutOfRange() {
+        Result result = run("wage", "day", "1e2147483647");
+        Check.equal(2, result.status());
+        Check.equal("invalid input: amount is outside the supported range", result.err());
+    }
 }

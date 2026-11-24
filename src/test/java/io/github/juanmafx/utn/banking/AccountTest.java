@@ -44,4 +44,21 @@ public class AccountTest {
             }
         });
     }
+
+    @Test
+    void subCentAmountsAreRejectedAndBalanceUnchanged() {
+        Account account = new Account(3, new BigDecimal("0.01"), Account.TypeCode.T);
+        Check.throwsType(IllegalArgumentException.class, () -> account.deposit(new BigDecimal("0.005")));
+        Check.throwsType(IllegalArgumentException.class, () -> account.withdraw(new BigDecimal("0.004")));
+        Check.money("0.01", account.balance());
+        Check.throwsType(IllegalArgumentException.class, () -> new Account(4, new BigDecimal("0.001"), Account.TypeCode.T));
+    }
+
+    @Test
+    void trailingZerosBeyondCentsAreAccepted() {
+        Account account = Account.withNumber(5);
+        account.deposit(new BigDecimal("1.2500"));
+        Check.money("1.25", account.balance());
+        Check.equal(2, account.balance().scale());
+    }
 }

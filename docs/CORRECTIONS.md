@@ -10,7 +10,7 @@ statement won. Each difference is listed here.
 | `ShiftWage` | Day and night rates were swapped | Day 35.50, night 40.60 |
 | `VehicleTax` | Hired cars paid 150 per year; age 10 matched two rules | 100 per year; each age matches one rule |
 | `SupplierPayment` | Category B got 5%; only lowercase input matched; bounds were exclusive | 2%, case-insensitive, inclusive |
-| `Grading` | Integer division truncated the mean; a mean of 4 fell through to promoted | Exact mean and correct bands |
+| `Grading` | Integer division truncated the mean; a mean of 4 fell through to promoted | Untruncated floating-point mean and correct bands |
 | `Grading.band` | Labels were shifted by one band | Labels match the statement |
 | `CohortSummary` | Accumulators mixed up; a mean of exactly 8 was uncounted | Every student counted once |
 | `QuadraticEquation` | Wrong formula in one version; integer division; zero discriminant reported as complex | Stable, correct roots |
@@ -18,7 +18,7 @@ statement won. Each difference is listed here.
 | `SearchAlgorithms` | Binary search compared the wrong index and its bounds were set before the length was read, so it never searched | Correct lower-bound search |
 | `Matrices` | Anti-diagonal printed the main diagonal in one version | Correct anti-diagonal |
 | `VectorStatistics` | Even mean divided by the count of all values; the zero terminator was counted | Correct mean and count |
-| `AgeStatistics` | Ages 17 and 32 rejected; integer mean; mode missing | Inclusive range, exact mean, mode implemented |
+| `AgeStatistics` | Ages 17 and 32 rejected; integer mean; mode missing | Inclusive range, untruncated mean, mode implemented |
 | `WeatherStation` | "Below 20" tested above 20; ties broke extremes; report checked one reading | Correct comparisons |
 | `Applicants` | Ties produced no winner | All tied applicants are reported |
 | `RevenueShare` | Ties produced no result | All tied products are reported |

@@ -30,8 +30,13 @@ r2 = c / q
 
 For `x^2 - 1e8 x + 1 = 0`, a test confirms the small root is recovered close to `1e-8`.
 
-The discriminant is still computed directly in double precision, so inputs where `b^2` and `4ac` nearly cancel can be
-classified with rounding error. This is a known limit.
+Before solving, all three coefficients are divided by the same power of two so that the largest has magnitude near 1.
+Dividing every coefficient by the same factor does not change the roots, the division is exact unless a much smaller
+coefficient underflows, and it stops `b^2` and `4ac` from overflowing or underflowing for very large or very small
+coefficients. Roots that do not fit in a `double` are rejected with an `ArithmeticException`.
+
+The discriminant is still computed in double precision, so inputs where `b^2` and `4ac` nearly cancel can be classified
+with rounding error. This is a known limit.
 
 ## Stable triangle area
 
@@ -41,6 +46,9 @@ triangles:
 ```text
 area = sqrt((a + (b + c)) * (c - (a - b)) * (c + (a - b)) * (a + (b - c))) / 4
 ```
+
+The sides are scaled by a power of two before the product and the area is scaled back afterwards, so the intermediate
+product cannot overflow when the area itself fits in a `double`. An area that does not fit is rejected.
 
 ## Unbiased shuffling
 

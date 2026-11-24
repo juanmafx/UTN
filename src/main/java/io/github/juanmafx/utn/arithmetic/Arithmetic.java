@@ -44,7 +44,7 @@ public final class Arithmetic {
     public static long sumOfFirstEvensForLoop(int count) {
         requireNonNegative(count);
         long sum = 0;
-        for (int index = 1; index <= count; index++) {
+        for (long index = 1; index <= count; index++) {
             sum += 2L * index;
         }
         return sum;
@@ -53,7 +53,7 @@ public final class Arithmetic {
     public static long sumOfFirstEvensWhileLoop(int count) {
         requireNonNegative(count);
         long sum = 0;
-        int index = 1;
+        long index = 1;
         while (index <= count) {
             sum += 2L * index;
             index++;
@@ -67,7 +67,7 @@ public final class Arithmetic {
             return 0;
         }
         long sum = 0;
-        int index = 1;
+        long index = 1;
         do {
             sum += 2L * index;
             index++;

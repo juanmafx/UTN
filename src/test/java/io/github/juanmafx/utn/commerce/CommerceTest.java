@@ -159,4 +159,45 @@ public class CommerceTest {
     void productLabel() {
         Check.equal("7 - Hammer", new Product(7, "Hammer", money("9.90"), 1, 2, LocalDate.of(2026, 1, 1)).label());
     }
+
+    @Test
+    void moneyRejectsExponentOverflow() {
+        for (String text : List.of("1e2147483647", "123e2147483645", "1e-2147483647")) {
+            Check.throwsType(IllegalArgumentException.class, () -> Money.parse(text));
+        }
+    }
+
+    @Test
+    void moneyNormalizesZeroWithExtremeExponent() {
+        Check.money("0", ShiftWage.dailyWage(ShiftWage.Shift.DAY, Money.parse("0e-2147483647")));
+    }
+
+    @Test
+    void moneyRoundsHalfToEven() {
+        Check.equal(new BigDecimal("0.12"), Money.round(new BigDecimal("0.125")));
+        Check.equal(new BigDecimal("0.14"), Money.round(new BigDecimal("0.135")));
+        Check.equal(new BigDecimal("-0.12"), Money.round(new BigDecimal("-0.125")));
+    }
+
+    @Test
+    void moneyRoundRejectsHugeMagnitudeBeforeRescaling() {
+        Check.throwsType(IllegalArgumentException.class, () -> Money.round(new BigDecimal("1e500000000")));
+        Check.throwsType(IllegalArgumentException.class, () -> Money.round(new BigDecimal("1e-500000000")));
+    }
+
+    @Test
+    void unknownOptionsDoNotExposeClassNames() {
+        List<Runnable> parsers = List.of(
+                () -> VehicleTax.Kind.parse("boat"),
+                () -> ShiftWage.Shift.parse("dusk"),
+                () -> SupplierPayment.Category.parse("c"));
+        for (Runnable parser : parsers) {
+            try {
+                parser.run();
+                throw new AssertionError("expected rejection");
+            } catch (IllegalArgumentException expected) {
+                Check.isTrue(!expected.getMessage().contains("io.github"), expected.getMessage());
+            }
+        }
+    }
 }

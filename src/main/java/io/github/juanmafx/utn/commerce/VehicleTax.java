@@ -1,6 +1,7 @@
 package io.github.juanmafx.utn.commerce;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.Locale;
 
 public final class VehicleTax {
@@ -8,7 +9,9 @@ public final class VehicleTax {
         PRIVATE, TAXI, HIRED_CAR;
 
         public static Kind parse(String name) {
-            return valueOf(name.trim().toUpperCase(Locale.ROOT));
+            String normalized = name.trim().toUpperCase(Locale.ROOT);
+            return Arrays.stream(values()).filter(value -> value.name().equals(normalized)).findFirst()
+                    .orElseThrow(() -> new IllegalArgumentException("unknown vehicle kind"));
         }
     }
 

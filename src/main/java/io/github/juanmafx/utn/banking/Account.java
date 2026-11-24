@@ -20,7 +20,7 @@ public final class Account {
         requireNonNegative(openingBalance);
         this.number = number;
         this.typeCode = Objects.requireNonNull(typeCode);
-        this.balance = Money.round(openingBalance);
+        this.balance = wholeCents(openingBalance);
     }
 
     public static Account withNumber(int number) {
@@ -29,16 +29,16 @@ public final class Account {
 
     public void deposit(BigDecimal amount) {
         requirePositive(amount);
-        balance = Money.round(balance.add(amount));
+        balance = balance.add(wholeCents(amount));
     }
 
     public void withdraw(BigDecimal amount) {
         requirePositive(amount);
-        BigDecimal remaining = balance.subtract(amount);
+        BigDecimal remaining = balance.subtract(wholeCents(amount));
         if (remaining.signum() < 0) {
             throw new IllegalStateException("insufficient funds");
         }
-        balance = Money.round(remaining);
+        balance = remaining;
     }
 
     public int number() {
@@ -56,6 +56,14 @@ public final class Account {
     @Override
     public String toString() {
         return "Account " + number + " balance " + balance.toPlainString() + " type " + typeCode;
+    }
+
+    private static BigDecimal wholeCents(BigDecimal amount) {
+        BigDecimal cents = Money.round(amount);
+        if (cents.compareTo(amount) != 0) {
+            throw new IllegalArgumentException("amount must be a whole number of cents");
+        }
+        return cents;
     }
 
     private static void requirePositive(BigDecimal amount) {

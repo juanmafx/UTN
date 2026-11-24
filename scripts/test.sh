@@ -6,6 +6,7 @@ build="${UTN_BUILD_DIR:-$root/build}"
 reports="$root/reports/tests"
 
 rm -rf "$build/classes" "$build/test-classes"
+rm -f "$reports/java-tests.xml" "$reports/database-tests.json" "$reports/SUMMARY.md"
 mkdir -p "$build/classes" "$build/test-classes" "$reports"
 
 find "$root/src/main/java" -name '*.java' > "$build/main-sources.txt"
@@ -20,6 +21,11 @@ java -ea -cp "$build/classes:$build/test-classes" io.github.juanmafx.utn.testkit
 
 database_status=0
 python3 -I "$root/db/tests/test_schema.py" "$reports/database-tests.json" || database_status=$?
+
+if [ ! -s "$reports/java-tests.xml" ] || [ ! -s "$reports/database-tests.json" ]; then
+    echo "a test runner did not produce its report; no summary was written" >&2
+    exit 1
+fi
 
 python3 -I "$root/scripts/write_test_summary.py" "$reports" "$(java -version 2>&1 | head -n 1)"
 

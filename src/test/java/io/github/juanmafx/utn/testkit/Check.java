@@ -30,7 +30,7 @@ public final class Check {
     }
 
     public static void near(double expected, double actual, double tolerance) {
-        if (Math.abs(expected - actual) > tolerance) {
+        if (Double.compare(expected, actual) != 0 && !(Math.abs(expected - actual) <= tolerance)) {
             throw new AssertionError("expected " + expected + " +/- " + tolerance + " but was " + actual);
         }
     }

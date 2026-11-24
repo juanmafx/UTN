@@ -143,4 +143,29 @@ public class ArithmeticTest {
         Check.throwsType(IllegalArgumentException.class, Extremes::of);
         Check.throwsType(IllegalArgumentException.class, () -> Extremes.of(1, Double.NaN));
     }
+
+    @Test
+    void evenSumLoopsTerminateAtIntegerMaximum() {
+        long expected = Arithmetic.sumOfFirstEvensClosedForm(Integer.MAX_VALUE);
+        Check.equal(expected, Arithmetic.sumOfFirstEvensForLoop(Integer.MAX_VALUE));
+        Check.equal(expected, Arithmetic.sumOfFirstEvensWhileLoop(Integer.MAX_VALUE));
+        Check.equal(expected, Arithmetic.sumOfFirstEvensDoWhileLoop(Integer.MAX_VALUE));
+    }
+
+    @Test
+    void calculatorRejectsNonFiniteOperandsAndResults() {
+        Check.throwsType(IllegalArgumentException.class, () -> Calculator.ADD.apply(Double.NaN, 1));
+        Check.throwsType(IllegalArgumentException.class, () -> Calculator.ADD.apply(Double.POSITIVE_INFINITY, 1));
+        Check.throwsType(ArithmeticException.class, () -> Calculator.MULTIPLY.apply(1e308, 10));
+    }
+
+    @Test
+    void calculatorRejectsUnknownOperationWithoutInternalNames() {
+        try {
+            Calculator.parse("power");
+            throw new AssertionError("expected rejection");
+        } catch (IllegalArgumentException expected) {
+            Check.equal("unknown operation", expected.getMessage());
+        }
+    }
 }

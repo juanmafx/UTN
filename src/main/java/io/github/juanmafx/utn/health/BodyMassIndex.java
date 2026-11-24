@@ -12,6 +12,9 @@ public record BodyMassIndex(double value, Category category) {
             throw new IllegalArgumentException("weight and height must be positive");
         }
         double value = weightKilograms / (heightMeters * heightMeters);
+        if (!Double.isFinite(value)) {
+            throw new IllegalArgumentException("body mass index is outside the double range");
+        }
         return new BodyMassIndex(value, classify(value));
     }
 

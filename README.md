@@ -14,8 +14,9 @@ programming program. It now expresses those same exercises as correct, testable 
 
 ## Why this project exists
 
-The original archive held more than 150 standalone source files: many duplicates, several that did not compile, and logic that
-disagreed with its own problem statements. Rebuilding it serves as a worked example of how to take legacy code and:
+The original archive held 157 Java, C# and SQL files, 24 of them IDE-generated C#. It included 21 byte-identical copies
+of Java files, 28 of its 115 Java files did not compile when checked with JDK 17, and much of its logic disagreed with
+its own problem statements. Rebuilding it serves as a worked example of how to take legacy code and:
 
 - separate domain logic from console input and output,
 - turn informal statements into explicit, enforced rules,
@@ -82,7 +83,9 @@ bash scripts/run.sh matrix 42 5 100
 bash scripts/run.sh bingo 42 7 21 63
 ```
 
-Commands that use randomness take an explicit seed, so the same arguments always produce the same output. Invalid input
+Commands that use randomness take an explicit seed, so the same arguments produce the same output on a given JDK.
+Each command takes exactly the arguments shown by `list`; only `search` accepts a variable number of values. Invalid
+input, including extra arguments, non-finite numbers, out-of-range bingo picks and results outside the `double` range,
 prints a message to standard error and exits with status `2`.
 
 ## Configuration
@@ -105,7 +108,9 @@ The database is **optional**: the library and CLI do not use it. Load it with:
 sqlite3 utn.db < db/schema.sql
 ```
 
-The schema uses a portable SQL subset, but it has only been executed on SQLite.
+The schema uses a portable SQL subset, but it has only been executed on SQLite. SQLite enforces the foreign keys only
+on connections that run `PRAGMA foreign_keys = ON`, as the schema tests do, and it does not enforce `VARCHAR` lengths or
+`NUMERIC` precision.
 
 ## Testing
 
@@ -114,13 +119,15 @@ bash scripts/test.sh
 ```
 
 The script compiles with all lint warnings treated as errors, runs the Java and database suites, and rewrites the report
-in [reports/tests/SUMMARY.md](reports/tests/SUMMARY.md). Property-based tests use fixed seeds and report the failing seed
+in [reports/tests/SUMMARY.md](reports/tests/SUMMARY.md). It deletes the previous reports first, so a runner that crashes
+leaves no stale summary behind. Property-based tests use fixed seeds and report the failing seed
 and sample. Statistical tests compare chi-squared statistics against critical values at alpha 0.001. Line coverage is not
 measured.
 
 ## Security notes
 
-The code validates input at its boundaries, uses exact decimals for money, and binds SQL parameters. It has no network
+The code validates input at its boundaries, rejects non-finite numbers, uses exact decimals for money and rejects
+fractions of a cent in account operations, and binds SQL parameters. It has no network
 access and no runtime dependencies. See [SECURITY.md](SECURITY.md) and [docs/SECURITY_AUDIT.md](docs/SECURITY_AUDIT.md),
 including what remains open in git history.
 

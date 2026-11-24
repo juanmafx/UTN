@@ -11,14 +11,24 @@ public record WeatherStation(double[][] readings) {
             throw new IllegalArgumentException("readings are required");
         }
         int days = readings[0].length;
-        double[][] copy = new double[readings.length][];
-        for (int location = 0; location < readings.length; location++) {
-            if (readings[location].length != days) {
+        for (double[] row : readings) {
+            if (row.length != days) {
                 throw new IllegalArgumentException("every location needs the same number of days");
             }
-            copy[location] = readings[location].clone();
+            if (!Arrays.stream(row).allMatch(Double::isFinite)) {
+                throw new IllegalArgumentException("readings must be finite");
+            }
         }
-        readings = copy;
+        readings = deepCopy(readings);
+    }
+
+    @Override
+    public double[][] readings() {
+        return deepCopy(readings);
+    }
+
+    private static double[][] deepCopy(double[][] source) {
+        return Arrays.stream(source).map(double[]::clone).toArray(double[][]::new);
     }
 
     public double overallMean() {

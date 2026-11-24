@@ -4,7 +4,9 @@ import io.github.juanmafx.utn.collections.Histogram;
 import io.github.juanmafx.utn.testkit.Check;
 import io.github.juanmafx.utn.testkit.Test;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.SplittableRandom;
 import java.util.stream.IntStream;
 
@@ -177,5 +179,31 @@ public class SimulationTest {
             rank = rank * (permutation.length - left) + smaller;
         }
         return rank;
+    }
+
+    @Test
+    void weatherStationReadingsCannotBeChangedThroughAccessor() {
+        WeatherStation station = new WeatherStation(new double[][] {{1, 2}});
+        station.readings()[0][0] = 99;
+        Check.near(2, station.peak().temperature(), 0);
+    }
+
+    @Test
+    void weatherStationRejectsNonFiniteReadings() {
+        Check.throwsType(IllegalArgumentException.class, () -> new WeatherStation(new double[][] {{Double.NaN, 5}}));
+    }
+
+    @Test
+    void bingoRejectsPicksOutsideNumberRange() {
+        BingoCard card = BingoCard.generate(new SplittableRandom(3));
+        Check.throwsType(IllegalArgumentException.class, () -> card.countMatches(0, 50, 60));
+        Check.throwsType(IllegalArgumentException.class, () -> card.countMatches(1, 2, 101));
+    }
+
+    @Test
+    void bingoCardRejectsInvalidNumbers() {
+        Check.throwsType(IllegalArgumentException.class, () -> new BingoCard(List.of(1, 2, 3)));
+        Check.throwsType(IllegalArgumentException.class, () -> new BingoCard(IntStream.rangeClosed(0, 14).boxed().toList()));
+        Check.throwsType(IllegalArgumentException.class, () -> new BingoCard(Collections.nCopies(15, 7)));
     }
 }

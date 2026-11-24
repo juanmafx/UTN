@@ -23,7 +23,10 @@ import java.util.SplittableRandom;
 import java.util.function.Function;
 
 public final class Main {
-    private record Command(String usage, int minimumArguments, Function<String[], String> action) {
+    private record Command(String usage, int minimumArguments, int maximumArguments, Function<String[], String> action) {
+        Command(String usage, int arguments, Function<String[], String> action) {
+            this(usage, arguments, arguments, action);
+        }
     }
 
     private static final int MAX_MATRIX_SIZE = 1000;
@@ -47,7 +50,7 @@ public final class Main {
             return 2;
         }
         String[] arguments = Arrays.copyOfRange(args, 1, args.length);
-        if (arguments.length < command.minimumArguments()) {
+        if (arguments.length < command.minimumArguments() || arguments.length > command.maximumArguments()) {
             err.println("usage: " + args[0] + " " + command.usage());
             return 2;
         }
@@ -90,7 +93,7 @@ public final class Main {
             BodyMassIndex index = BodyMassIndex.of(Double.parseDouble(a[0]), Double.parseDouble(a[1]));
             return String.format(java.util.Locale.ROOT, "%.2f %s", index.value(), index.category());
         }));
-        commands.put("search", new Command("<target> <sorted-values...>", 2, a -> {
+        commands.put("search", new Command("<target> <sorted-values...>", 2, Integer.MAX_VALUE, a -> {
             int[] values = Arrays.stream(a, 1, a.length).mapToInt(Integer::parseInt).toArray();
             return String.valueOf(SearchAlgorithms.binarySearch(values, Integer.parseInt(a[0])));
         }));

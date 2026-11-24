@@ -40,7 +40,7 @@ parameter such as `currentYear`, and randomness arrives as a `RandomGenerator`.
 
 | Decision | Reason |
 | --- | --- |
-| Immutable records for values | Validation runs in one place and invalid objects cannot exist |
+| Records for values | Input records validate in their constructors and copy mutable arrays; result records such as `CohortSummary` come from factory methods and do not re-validate their components |
 | `BigDecimal` for money | Binary floating point cannot represent most cents exactly |
 | Injected `RandomGenerator` | Runs are reproducible from a seed |
 | Custom test kit | Keeps the build free of third-party code |

@@ -127,4 +127,34 @@ public class GeometryTest {
             Check.isTrue(area > 0, "positive area");
         });
     }
+
+    @Test
+    void quadraticHandlesExtremeMagnitudes() {
+        Check.isTrue(QuadraticEquation.solve(1e308, 1e308, 1e308) instanceof ComplexPair, "huge coefficients");
+        Check.isTrue(QuadraticEquation.solve(1e-200, 1e-200, 1e-200) instanceof ComplexPair, "tiny coefficients");
+        TwoReal roots = (TwoReal) QuadraticEquation.solve(1, 1e200, 1);
+        Check.near(-1e200, roots.smaller(), 1e186);
+        Check.near(-1e-200, roots.larger(), 1e-214);
+    }
+
+    @Test
+    void quadraticNeverReportsNegativeZero() {
+        Check.equal(new TwoReal(-5.0, 0.0), QuadraticEquation.solve(1, 5, 0));
+    }
+
+    @Test
+    void quadraticRejectsRootsOutsideDoubleRange() {
+        Check.throwsType(ArithmeticException.class, () -> QuadraticEquation.solve(1e-300, 1e300, 1));
+    }
+
+    @Test
+    void triangleRejectsOverflowingPerimeter() {
+        Check.throwsType(IllegalArgumentException.class, () -> new Triangle(1e308, 1e308, 1e308));
+    }
+
+    @Test
+    void triangleAreaAvoidsIntermediateOverflow() {
+        Check.near(Math.sqrt(3) / 4, new Triangle(1e153, 1e153, 1e153).area() / 1e306, 1e-12);
+        Check.throwsType(ArithmeticException.class, () -> new Triangle(1e200, 1e200, 1e200).area());
+    }
 }

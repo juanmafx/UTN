@@ -1,6 +1,7 @@
 package io.github.juanmafx.utn.commerce;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.Locale;
 
 public final class SupplierPayment {
@@ -8,7 +9,9 @@ public final class SupplierPayment {
         A, B;
 
         public static Category parse(String name) {
-            return valueOf(name.trim().toUpperCase(Locale.ROOT));
+            String normalized = name.trim().toUpperCase(Locale.ROOT);
+            return Arrays.stream(values()).filter(value -> value.name().equals(normalized)).findFirst()
+                    .orElseThrow(() -> new IllegalArgumentException("unknown supplier category"));
         }
     }
 
