@@ -1,34 +1,24 @@
-# Release Notes: 1.0.0
+# Release Notes: 1.0.1
 
-**Status:** prepared, not yet tagged or published.
+Released 2026-11-24.
 
 ## Summary
 
-Version 1.0.0 rebuilds the 2018 university coursework archive as a single, tested Java 17 codebase. The original files
-remain available in git history.
+Version 1.0.1 is a documentation-only patch release. The release notes, provenance, corrections and security audit now
+reflect that 1.0.0 was published on 2026-11-24 and that the published git history begins with the 2026 modernization.
+No code behaviour changed.
 
-## Highlights
+## Upgrade
 
-- Domain packages with no console, clock or global random access.
-- Numerically stable quadratic and triangle calculations.
-- Exact decimal money handling.
-- Seeded, reproducible simulations with property-based and chi-squared tests.
-- A constrained SQL schema with parameterized queries.
-- No third-party dependencies.
-
-## Breaking changes
-
-All paths, class names and identifiers changed. The C# Windows Forms projects were retired and their logic was ported to
-Java. Several results differ from the original programs because defects were fixed; see
-[docs/CORRECTIONS.md](docs/CORRECTIONS.md).
+No action is needed when upgrading from 1.0.0. See the [changelog](CHANGELOG.md) for the full 1.0.0 change list and its
+breaking changes.
 
 ## Verification
 
-Run `bash scripts/test.sh`. Results from the release candidate are in [reports/tests/SUMMARY.md](reports/tests/SUMMARY.md).
+Run `bash scripts/test.sh`. Results from the latest run are in [reports/tests/SUMMARY.md](reports/tests/SUMMARY.md).
 
 ## Known limitations
 
 - The schema has only been executed on SQLite.
 - Line coverage is not measured.
-- Git history still contains the retired files; see [docs/SECURITY_AUDIT.md](docs/SECURITY_AUDIT.md).
 - No license has been declared.

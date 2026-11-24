@@ -1,8 +1,8 @@
 # Source Provenance
 
-Every file of the original coursework remains available in git history at commit `9aad681`.
-Original file names are intentionally not repeated here. Retrieve any original with
-`git cat-file -p <blob>`.
+The original coursework files are not part of the published git history, which begins with the 2026 modernization.
+Original file names are intentionally not repeated here. Each original is identified by the abbreviated git blob hash of
+its content, which `git hash-object` reproduces from any copy of that file.
 
 ## Ported sources
 

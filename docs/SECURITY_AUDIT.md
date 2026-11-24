@@ -9,7 +9,8 @@ penetration test.
 | Status | Count |
 | --- | ---: |
 | Fixed in the tree | 16 |
-| Open, requires an owner decision | 2 |
+| Resolved by the 2026-11-24 history rewrite | 1 |
+| Open, requires an owner decision | 1 |
 | Accepted limitation | 3 |
 
 ## Fixed
@@ -33,11 +34,16 @@ penetration test.
 | F-15 | Low | `WeatherStation.readings()` returned its internal array and accepted `NaN` readings | Deep copies and finite-value validation |
 | F-16 | Low | The test kit's `Check.near` passed when the actual value was `NaN`, and `scripts/test.sh` could rewrite the summary from a stale report after a runner crash | `NaN` fails the assertion, and old reports are deleted before each run |
 
+## Resolved by history rewrite
+
+| ID | Severity | Finding | Resolution |
+| --- | --- | --- | --- |
+| O-01 | Medium | Git history contained the retired binaries, the workstation account path and the student identifier | Resolved by the 2026-11-24 history rewrite: those commits are no longer in any branch or tag. Old commits may stay reachable by direct SHA on GitHub until unreferenced objects are purged, so anything that was ever published should still be treated as exposed |
+
 ## Open
 
 | ID | Severity | Finding | Required decision |
 | --- | --- | --- | --- |
-| O-01 | Medium | Git history still contains the retired binaries, the workstation account path and the student identifier | Removing them requires a history rewrite and force-push, which only the owner can authorize |
 | O-02 | Low | The repository declares no license, and course material may not be relicensable | Owner should choose a license for original code |
 
 ## Accepted limitations

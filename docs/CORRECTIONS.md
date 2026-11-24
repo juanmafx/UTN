@@ -53,4 +53,4 @@ weather station matrix report implement statements that had no working code.
 ## Removed
 
 The Windows Forms screens, OLE DB helper and .NET Framework projects were not carried over. Their logic was ported to
-Java, and the originals remain in git history.
+Java. The originals are not part of the published git history.

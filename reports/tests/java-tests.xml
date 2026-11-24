@@ -1,178 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="utn" tests="175" failures="0" errors="0" skipped="0" time="1.900" timestamp="2026-11-24T03:45:45Z">
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="allEvenSumStrategiesAgree" time="0.0306"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="binaryIgnoresLeadingZerosForWidth" time="0.0014"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="binaryKnownValues" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="binaryRejectsInvalidInput" time="0.0006"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="binaryRoundTripsAndMatchesJdk" time="0.0156"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="calculatorOperations" time="0.0023"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="calculatorRejectsDivisionByZero" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="calculatorRejectsNonFiniteOperandsAndResults" time="0.0005"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="calculatorRejectsUnknownOperationWithoutInternalNames" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="cubeOverflowIsRejected" time="0.0002"/>
+<testsuite name="utn" tests="175" failures="0" errors="0" skipped="0" time="3.054" timestamp="2026-11-24T22:55:28Z">
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="allEvenSumStrategiesAgree" time="0.0521"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="binaryIgnoresLeadingZerosForWidth" time="0.0017"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="binaryKnownValues" time="0.0001"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="binaryRejectsInvalidInput" time="0.0010"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="binaryRoundTripsAndMatchesJdk" time="0.0238"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="calculatorOperations" time="0.0041"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="calculatorRejectsDivisionByZero" time="0.0004"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="calculatorRejectsNonFiniteOperandsAndResults" time="0.0012"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="calculatorRejectsUnknownOperationWithoutInternalNames" time="0.0001"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="cubeOverflowIsRejected" time="0.0004"/>
   <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="cubesSumAtMostTen" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="digitPlacesRoundTrip" time="0.0026"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="durationRoundTrips" time="0.0025"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="durationStatementExamples" time="0.0070"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="evenSumLoopsTerminateAtIntegerMaximum" time="1.4861"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="extremesBoundEveryValue" time="0.0072"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="extremesRejectEmptyAndNaN" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="digitPlacesRoundTrip" time="0.0050"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="durationRoundTrips" time="0.0054"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="durationStatementExamples" time="0.0134"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="evenSumLoopsTerminateAtIntegerMaximum" time="2.1895"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="extremesBoundEveryValue" time="0.0152"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="extremesRejectEmptyAndNaN" time="0.0010"/>
   <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="firstEvensStartAtTwo" time="0.0001"/>
   <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="halvesSumAboveTen" time="0.0000"/>
   <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="incrementTraceMatchesJavaSemantics" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="negativeCountIsRejected" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="parityHandlesNegativeOdds" time="0.0136"/>
-  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="parityPartitionsInput" time="0.0037"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="negativeCountIsRejected" time="0.0003"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="parityHandlesNegativeOdds" time="0.0220"/>
+  <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="parityPartitionsInput" time="0.0064"/>
   <testcase classname="io.github.juanmafx.utn.arithmetic.ArithmeticTest" name="rangeEstimateMultiplies" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.banking.AccountTest" name="balanceNeverGoesNegative" time="0.0065"/>
-  <testcase classname="io.github.juanmafx.utn.banking.AccountTest" name="depositAndWithdrawKeepExactCents" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.banking.AccountTest" name="nonPositiveAmountsAreRejected" time="0.0005"/>
-  <testcase classname="io.github.juanmafx.utn.banking.AccountTest" name="overdraftIsRejectedAndBalanceUnchanged" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.banking.AccountTest" name="subCentAmountsAreRejectedAndBalanceUnchanged" time="0.0006"/>
-  <testcase classname="io.github.juanmafx.utn.banking.AccountTest" name="trailingZerosBeyondCentsAreAccepted" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="bingoIsReproducibleForSeed" time="0.0104"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="bingoPicksMustBeInNumberRange" time="0.0004"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="divisionByZeroFailsCleanly" time="0.0003"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="exponentOverflowIsReportedAsOutOfRange" time="0.0009"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="extraArgumentsAreRejected" time="0.0018"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="hugeExponentIsRejectedBeforeRounding" time="0.0012"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="listsCatalog" time="0.0010"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="malformedNumberFailsCleanly" time="0.0001"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="matrixIsReproducibleForSeed" time="0.0091"/>
+  <testcase classname="io.github.juanmafx.utn.banking.AccountTest" name="balanceNeverGoesNegative" time="0.0150"/>
+  <testcase classname="io.github.juanmafx.utn.banking.AccountTest" name="depositAndWithdrawKeepExactCents" time="0.0001"/>
+  <testcase classname="io.github.juanmafx.utn.banking.AccountTest" name="nonPositiveAmountsAreRejected" time="0.0011"/>
+  <testcase classname="io.github.juanmafx.utn.banking.AccountTest" name="overdraftIsRejectedAndBalanceUnchanged" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.banking.AccountTest" name="subCentAmountsAreRejectedAndBalanceUnchanged" time="0.0013"/>
+  <testcase classname="io.github.juanmafx.utn.banking.AccountTest" name="trailingZerosBeyondCentsAreAccepted" time="0.0001"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="bingoIsReproducibleForSeed" time="0.0226"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="bingoPicksMustBeInNumberRange" time="0.0008"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="divisionByZeroFailsCleanly" time="0.0006"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="exponentOverflowIsReportedAsOutOfRange" time="0.0025"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="extraArgumentsAreRejected" time="0.0093"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="hugeExponentIsRejectedBeforeRounding" time="0.0019"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="listsCatalog" time="0.0018"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="malformedNumberFailsCleanly" time="0.0003"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="matrixIsReproducibleForSeed" time="0.0195"/>
   <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="missingArgumentsFail" time="0.0001"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="nonFiniteValuesAreRejected" time="0.0008"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="nonFiniteValuesAreRejected" time="0.0012"/>
   <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="oversizedMatrixIsRejected" time="0.0001"/>
   <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="runsDuration" time="0.0001"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="runsSearch" time="0.0004"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="runsVehicleTaxWithExplicitYear" time="0.0010"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="runsSearch" time="0.0007"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="runsVehicleTaxWithExplicitYear" time="0.0018"/>
   <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="unknownCommandFails" time="0.0001"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="unknownOptionsDoNotExposeClassNames" time="0.0001"/>
-  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="yearOverflowIsRejected" time="0.0001"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="ageOutsideRangeIsRejected" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="unknownOptionsDoNotExposeClassNames" time="0.0002"/>
+  <testcase classname="io.github.juanmafx.utn.cli.MainTest" name="yearOverflowIsRejected" time="0.0002"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="ageOutsideRangeIsRejected" time="0.0015"/>
   <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="ageStatisticsIncludeBoundsAndMode" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="allPositionsFindsEveryOccurrence" time="0.0009"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="binarySearchAgreesWithLinearOnSortedInput" time="0.0189"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="allPositionsFindsEveryOccurrence" time="0.0028"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="binarySearchAgreesWithLinearOnSortedInput" time="0.0422"/>
   <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="binarySearchHandlesExtremeValues" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="binarySearchRejectsUnsortedInput" time="0.0005"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="chiSquaredDetectsSkew" time="0.0004"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="binarySearchRejectsUnsortedInput" time="0.0006"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="chiSquaredDetectsSkew" time="0.0005"/>
   <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="chiSquaredIsZeroForPerfectlyUniformCounts" time="0.0000"/>
   <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="diagonalsAndLeftHalf" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="histogramConservesCount" time="0.0082"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="histogramRejectsOutOfRange" time="0.0004"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="matrixSumsAreConsistent" time="0.0035"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="meanPartitionExcludesOnlyValuesEqualToMean" time="0.0155"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="nonSquareMatrixIsRejected" time="0.0004"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="randomMatrixIsSeedReproducible" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="seededGeneratorPassesUniformityAtAlphaPointZeroZeroOne" time="0.0015"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="histogramConservesCount" time="0.0127"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="histogramRejectsOutOfRange" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="matrixSumsAreConsistent" time="0.0067"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="meanPartitionExcludesOnlyValuesEqualToMean" time="0.0286"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="nonSquareMatrixIsRejected" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="randomMatrixIsSeedReproducible" time="0.0001"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="seededGeneratorPassesUniformityAtAlphaPointZeroZeroOne" time="0.0024"/>
   <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="sequentialEvensMatchesStatement" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="vectorProductDoesNotOverflow" time="0.0001"/>
-  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="vectorStatisticsReport" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="artGalleryCenturyBoundary" time="0.0010"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="artGalleryRenewsStockWhenNothingRecent" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="electricityBillFormula" time="0.0003"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="electricityBillRejectsDecreasingReading" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="expenseBalancesSumToZero" time="0.0130"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="expenseSplitExample" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="futureModelYearIsRejected" time="0.0003"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="vectorProductDoesNotOverflow" time="0.0002"/>
+  <testcase classname="io.github.juanmafx.utn.collections.CollectionsTest" name="vectorStatisticsReport" time="0.0001"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="artGalleryCenturyBoundary" time="0.0019"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="artGalleryRenewsStockWhenNothingRecent" time="0.0001"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="electricityBillFormula" time="0.0006"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="electricityBillRejectsDecreasingReading" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="expenseBalancesSumToZero" time="0.0347"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="expenseSplitExample" time="0.0001"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="futureModelYearIsRejected" time="0.0005"/>
   <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="hiredCarPaysOneHundredPerYear" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="markupAppliesTwentyPercent" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="moneyNormalizesZeroWithExtremeExponent" time="0.0001"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="moneyRejectsExponentOverflow" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="moneyRoundRejectsHugeMagnitudeBeforeRescaling" time="0.0003"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="moneyRoundsHalfToEven" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="productLabel" time="0.0021"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="revenueShareFindsLeader" time="0.0020"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="revenueShareRejectsZeroRevenue" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="revenueShareReportsTies" time="0.0000"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="markupAppliesTwentyPercent" time="0.0004"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="moneyNormalizesZeroWithExtremeExponent" time="0.0002"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="moneyRejectsExponentOverflow" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="moneyRoundRejectsHugeMagnitudeBeforeRescaling" time="0.0007"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="moneyRoundsHalfToEven" time="0.0001"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="productLabel" time="0.0044"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="revenueShareFindsLeader" time="0.0043"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="revenueShareRejectsZeroRevenue" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="revenueShareReportsTies" time="0.0001"/>
   <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="shiftRatesFollowStatement" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="supplierCategoryADiscountBoundary" time="0.0000"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="supplierCategoryADiscountBoundary" time="0.0001"/>
   <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="supplierCategoryBDiscountBoundaries" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="supplierDiscountNeverRaisesAmount" time="0.0038"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="supplierDiscountNeverRaisesAmount" time="0.0078"/>
   <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="taxiAddsLicenseFee" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="transitTopUpAddsMargin" time="0.0002"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="transitTopUpAddsMargin" time="0.0005"/>
   <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="transitTopUpIsNeverNegative" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="unknownOptionsDoNotExposeClassNames" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="unknownOptionsDoNotExposeClassNames" time="0.0013"/>
   <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="vehicleTaxBoundaries" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="workpieceInspectionUsesAcceptedPiecesOnly" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="applicantLevels" time="0.0003"/>
-  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="applicantWinnersIncludeTies" time="0.0020"/>
-  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="bandBoundaries" time="0.0003"/>
-  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="classQuotaReport" time="0.0027"/>
-  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="classroomPercentagesSumToHundred" time="0.0015"/>
-  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="cohortSummaryCountsEveryStudent" time="0.0005"/>
-  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="formStateRejectsInvalidTransitions" time="0.0005"/>
-  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="formStateTransitions" time="0.0005"/>
-  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="gradeOutsideScaleIsRejected" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="inconsistentApplicantIsRejected" time="0.0002"/>
+  <testcase classname="io.github.juanmafx.utn.commerce.CommerceTest" name="workpieceInspectionUsesAcceptedPiecesOnly" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="applicantLevels" time="0.0007"/>
+  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="applicantWinnersIncludeTies" time="0.0040"/>
+  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="bandBoundaries" time="0.0007"/>
+  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="classQuotaReport" time="0.0120"/>
+  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="classroomPercentagesSumToHundred" time="0.0036"/>
+  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="cohortSummaryCountsEveryStudent" time="0.0012"/>
+  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="formStateRejectsInvalidTransitions" time="0.0012"/>
+  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="formStateTransitions" time="0.0009"/>
+  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="gradeOutsideScaleIsRejected" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="inconsistentApplicantIsRejected" time="0.0004"/>
   <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="meanKeepsFraction" time="0.0000"/>
   <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="standingBoundaries" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="standingIsMonotonicInMean" time="0.0015"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="defaultLineIsHorizontal" time="0.0004"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="distanceDoesNotOverflow" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="generatedLinePointsAreContained" time="0.0032"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="invalidTrianglesAreRejected" time="0.0007"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="lineInterceptAndEquation" time="0.0001"/>
+  <testcase classname="io.github.juanmafx.utn.education.EducationTest" name="standingIsMonotonicInMean" time="0.0045"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="defaultLineIsHorizontal" time="0.0008"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="distanceDoesNotOverflow" time="0.0003"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="generatedLinePointsAreContained" time="0.0087"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="invalidTrianglesAreRejected" time="0.0015"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="lineInterceptAndEquation" time="0.0002"/>
   <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="needleTriangleKeepsPrecision" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="pointFormat" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadrantsAndAxes" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticComplexRoots" time="0.0025"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticHandlesExtremeMagnitudes" time="0.0002"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="pointFormat" time="0.0001"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadrantsAndAxes" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticComplexRoots" time="0.0073"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticHandlesExtremeMagnitudes" time="0.0004"/>
   <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticIsStableUnderCancellation" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticNeverReportsNegativeZero" time="0.0003"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticOneRoot" time="0.0011"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticRecoversConstructedRoots" time="0.0028"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticRejectsDegenerateInput" time="0.0003"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticRejectsRootsOutsideDoubleRange" time="0.0002"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticNeverReportsNegativeZero" time="0.0009"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticOneRoot" time="0.0030"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticRecoversConstructedRoots" time="0.0057"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticRejectsDegenerateInput" time="0.0007"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticRejectsRootsOutsideDoubleRange" time="0.0003"/>
   <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="quadraticTwoRealRoots" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="triangleAreaAvoidsIntermediateOverflow" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="triangleAreaIsPermutationInvariant" time="0.0032"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="triangleAreaAvoidsIntermediateOverflow" time="0.0003"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="triangleAreaIsPermutationInvariant" time="0.0060"/>
   <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="triangleMeasures" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="triangleRejectsOverflowingPerimeter" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.health.BodyMassIndexTest" name="categoryBoundaries" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.health.BodyMassIndexTest" name="categoryIsMonotonic" time="0.0013"/>
-  <testcase classname="io.github.juanmafx.utn.health.BodyMassIndexTest" name="computesFromKilogramsAndMeters" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.health.BodyMassIndexTest" name="indexOutsideDoubleRangeIsRejected" time="0.0003"/>
-  <testcase classname="io.github.juanmafx.utn.health.BodyMassIndexTest" name="invalidInputIsRejected" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.persistence.SafeQueriesTest" name="allowsListedTable" time="0.0005"/>
-  <testcase classname="io.github.juanmafx.utn.persistence.SafeQueriesTest" name="bindsParametersWithoutTouchingSqlText" time="0.0168"/>
-  <testcase classname="io.github.juanmafx.utn.persistence.SafeQueriesTest" name="rejectsInjectionPayloads" time="0.0004"/>
-  <testcase classname="io.github.juanmafx.utn.persistence.SafeQueriesTest" name="rejectsInvalidAllowlistEntry" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.persistence.SafeQueriesTest" name="rejectsUnlistedTable" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="employeeSalaryIsExact" time="0.0001"/>
-  <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="memberAgeHandlesBirthdayBoundary" time="0.0006"/>
+  <testcase classname="io.github.juanmafx.utn.geometry.GeometryTest" name="triangleRejectsOverflowingPerimeter" time="0.0004"/>
+  <testcase classname="io.github.juanmafx.utn.health.BodyMassIndexTest" name="categoryBoundaries" time="0.0004"/>
+  <testcase classname="io.github.juanmafx.utn.health.BodyMassIndexTest" name="categoryIsMonotonic" time="0.0025"/>
+  <testcase classname="io.github.juanmafx.utn.health.BodyMassIndexTest" name="computesFromKilogramsAndMeters" time="0.0001"/>
+  <testcase classname="io.github.juanmafx.utn.health.BodyMassIndexTest" name="indexOutsideDoubleRangeIsRejected" time="0.0008"/>
+  <testcase classname="io.github.juanmafx.utn.health.BodyMassIndexTest" name="invalidInputIsRejected" time="0.0006"/>
+  <testcase classname="io.github.juanmafx.utn.persistence.SafeQueriesTest" name="allowsListedTable" time="0.0011"/>
+  <testcase classname="io.github.juanmafx.utn.persistence.SafeQueriesTest" name="bindsParametersWithoutTouchingSqlText" time="0.0448"/>
+  <testcase classname="io.github.juanmafx.utn.persistence.SafeQueriesTest" name="rejectsInjectionPayloads" time="0.0008"/>
+  <testcase classname="io.github.juanmafx.utn.persistence.SafeQueriesTest" name="rejectsInvalidAllowlistEntry" time="0.0010"/>
+  <testcase classname="io.github.juanmafx.utn.persistence.SafeQueriesTest" name="rejectsUnlistedTable" time="0.0006"/>
+  <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="employeeSalaryIsExact" time="0.0004"/>
+  <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="memberAgeHandlesBirthdayBoundary" time="0.0015"/>
   <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="memberAgeHandlesLeapDayBirth" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="memberAgeRejectsDateBeforeBirth" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="personFullName" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="studentMeanUsesAllThreeGrades" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="studentRejectsInvalidGrade" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoCardHasFifteenDistinctNumbersInRange" time="0.0250"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoCardIsSeedReproducible" time="0.0008"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoCardRejectsInvalidNumbers" time="0.0006"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoMatchesCountDistinctPicks" time="0.0001"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoNumbersAreUniformlyDrawn" time="0.0746"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoRejectsPicksOutsideNumberRange" time="0.0006"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoReportsNoLuck" time="0.0013"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="elevatorCarriesWithinCapacity" time="0.0008"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="elevatorRejectsInvalidFloors" time="0.0005"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="elevatorStaysInBoundsUnderRandomOperations" time="0.0054"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="fisherYatesIsUnbiasedOverPermutations" time="0.0222"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="fisherYatesPreservesElements" time="0.0097"/>
+  <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="memberAgeRejectsDateBeforeBirth" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="personFullName" time="0.0004"/>
+  <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="studentMeanUsesAllThreeGrades" time="0.0004"/>
+  <testcase classname="io.github.juanmafx.utn.records.RecordsTest" name="studentRejectsInvalidGrade" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoCardHasFifteenDistinctNumbersInRange" time="0.0534"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoCardIsSeedReproducible" time="0.0016"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoCardRejectsInvalidNumbers" time="0.0013"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoMatchesCountDistinctPicks" time="0.0002"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoNumbersAreUniformlyDrawn" time="0.1409"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoRejectsPicksOutsideNumberRange" time="0.0011"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="bingoReportsNoLuck" time="0.0044"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="elevatorCarriesWithinCapacity" time="0.0018"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="elevatorRejectsInvalidFloors" time="0.0012"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="elevatorStaysInBoundsUnderRandomOperations" time="0.0127"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="fisherYatesIsUnbiasedOverPermutations" time="0.0450"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="fisherYatesPreservesElements" time="0.0245"/>
   <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="overloadedElevatorDoesNotMove" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="playingCardLabels" time="0.0006"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="readingsBelowThreshold" time="0.0005"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="shuffleRejectsInvalidCount" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="weatherMeansAgree" time="0.0139"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="playingCardLabels" time="0.0009"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="readingsBelowThreshold" time="0.0007"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="shuffleRejectsInvalidCount" time="0.0004"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="weatherMeansAgree" time="0.0343"/>
   <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="weatherStationIsDefensivelyCopied" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="weatherStationReadingsCannotBeChangedThroughAccessor" time="0.0003"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="weatherStationRejectsNonFiniteReadings" time="0.0003"/>
-  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="weatherStationReport" time="0.0018"/>
-  <testcase classname="io.github.juanmafx.utn.sports.SportsTest" name="competitionDeskCheckFromStatement" time="0.0018"/>
-  <testcase classname="io.github.juanmafx.utn.sports.SportsTest" name="competitionRejectsEmptyAndInvalid" time="0.0003"/>
-  <testcase classname="io.github.juanmafx.utn.sports.SportsTest" name="competitionReportsTiedWinners" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.sports.SportsTest" name="leagueAverageCountsEveryMatch" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.sports.SportsTest" name="leagueAverageRejectsNoMatches" time="0.0002"/>
-  <testcase classname="io.github.juanmafx.utn.sports.SportsTest" name="leagueAverageStaysWithinPointBounds" time="0.0012"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="weatherStationReadingsCannotBeChangedThroughAccessor" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="weatherStationRejectsNonFiniteReadings" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.simulation.SimulationTest" name="weatherStationReport" time="0.0049"/>
+  <testcase classname="io.github.juanmafx.utn.sports.SportsTest" name="competitionDeskCheckFromStatement" time="0.0048"/>
+  <testcase classname="io.github.juanmafx.utn.sports.SportsTest" name="competitionRejectsEmptyAndInvalid" time="0.0006"/>
+  <testcase classname="io.github.juanmafx.utn.sports.SportsTest" name="competitionReportsTiedWinners" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.sports.SportsTest" name="leagueAverageCountsEveryMatch" time="0.0013"/>
+  <testcase classname="io.github.juanmafx.utn.sports.SportsTest" name="leagueAverageRejectsNoMatches" time="0.0004"/>
+  <testcase classname="io.github.juanmafx.utn.sports.SportsTest" name="leagueAverageStaysWithinPointBounds" time="0.0033"/>
   <testcase classname="io.github.juanmafx.utn.testkit.CheckTest" name="nearAcceptsValuesWithinToleranceAndEqualInfinities" time="0.0000"/>
-  <testcase classname="io.github.juanmafx.utn.testkit.CheckTest" name="nearFailsOutsideTolerance" time="0.0022"/>
-  <testcase classname="io.github.juanmafx.utn.testkit.CheckTest" name="nearFailsWhenActualIsNaN" time="0.0005"/>
+  <testcase classname="io.github.juanmafx.utn.testkit.CheckTest" name="nearFailsOutsideTolerance" time="0.0048"/>
+  <testcase classname="io.github.juanmafx.utn.testkit.CheckTest" name="nearFailsWhenActualIsNaN" time="0.0007"/>
 </testsuite>

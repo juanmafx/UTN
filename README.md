@@ -4,7 +4,7 @@ A tested Java library and command-line tool that rebuilds a collection of univer
 coherent, dependency-free codebase.
 
 > **Project history:** originally created in 2018 as coursework, modernized in 2026. The modern code in this tree was
-> written in 2026; the original files remain untouched in git history.
+> written in 2026. The published git history begins with the 2026 modernization; the original files are not part of it.
 
 ## Purpose
 
@@ -128,8 +128,7 @@ measured.
 
 The code validates input at its boundaries, rejects non-finite numbers, uses exact decimals for money and rejects
 fractions of a cent in account operations, and binds SQL parameters. It has no network
-access and no runtime dependencies. See [SECURITY.md](SECURITY.md) and [docs/SECURITY_AUDIT.md](docs/SECURITY_AUDIT.md),
-including what remains open in git history.
+access and no runtime dependencies. See [SECURITY.md](SECURITY.md) and [docs/SECURITY_AUDIT.md](docs/SECURITY_AUDIT.md).
 
 ## Attribution and license
 
