@@ -1,4 +1,4 @@
-# UTN
+# java-coursework-library
 
 A tested Java library and command-line tool that rebuilds a collection of university programming coursework as one
 coherent, dependency-free codebase.
@@ -65,7 +65,7 @@ Requirements: JDK 17, Python 3 and Bash (tested with OpenJDK 17 and Python 3.14)
 
 ```bash
 git clone https://github.com/juanmafx/UTN.git
-cd UTN
+cd java-coursework-library
 bash scripts/test.sh
 bash scripts/run.sh list
 ```
