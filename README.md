@@ -64,7 +64,7 @@ There is no client/server split because the project has no server. Details are i
 Requirements: JDK 17, Python 3 and Bash (tested with OpenJDK 17 and Python 3.14). There are no third-party dependencies to install.
 
 ```bash
-git clone https://github.com/juanmafx/UTN.git
+git clone https://github.com/juanmafx/java-coursework-library.git
 cd java-coursework-library
 bash scripts/test.sh
 bash scripts/run.sh list
